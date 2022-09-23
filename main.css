@@ -1,0 +1,382 @@
+/********************************************************************************/
+/*                          CSS - University.html                               */
+/********************************************************************************/
+
+
+
+/* NAV */
+
+#nav {
+    width: 100%;
+    height: 1100px;
+    display:block;
+    flex-direction: column;
+    background: url('../img/photo1.jpg')no-repeat center/cover;
+}
+
+/* GRID FIRST */
+
+.grid-first {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.box i {
+    margin-right: 05px;
+}
+
+.box_1 {
+    display: flex;
+    align-items: center;
+    grid-column: 2/4;
+    height: 100px;
+}
+
+.box_01 h3 {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+.box_1 h2 {
+    font-size: 20;
+    margin-bottom: 40px;
+    width: 100%;
+    font-size: 45px;
+    text-align: center;
+}
+
+.box_2 {
+    color: black;
+    height: 450px;
+    grid-column: 1/3;
+    background: url('../img/family.jpg')no-repeat center/cover;
+    text-transform: uppercase;
+    padding: 45px;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.box_2:hover,
+.box_3:hover,
+.box_4:hover,
+.box_5:hover,
+.box_6:hover,
+.box_7:hover,
+.box_8:hover {
+    opacity: .9;
+    filter: alpha(opacity=50);
+    transform: scale(1.05);
+}
+
+.box_3 h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.box_2 p {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.box_3 {
+    height: 450px;
+    background: rgb(93, 109, 126);
+    padding: 45px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.box_3 h3 {
+    font-size: 20px;
+    color: rgba(166, 255, 0, 0.767);
+    margin-bottom: 20px;
+}
+
+.box_3 p,
+.box_4 p,
+.box_5 p,
+.box_6 p,
+.box_7 p,
+.box_8 p {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.box_5 a,
+.box_7 a,
+.box_3 a {
+    color: white;
+}
+
+.box_4 {
+    height: 450px;
+    background: url('../img/covid.jpg')center/cover;
+    padding: 45px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.box_4 h3,
+.box_6 h3,
+.box_7 h3,
+.box_7 h3 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.box_4 p:hover,
+.box_5 p:hover,
+.box_6 p:hover,
+.box_7 p:hover,
+.box_8 p:hover {
+    color: black;
+}
+
+.box_5 {
+    height: 450px;
+    background: url('../img/enterpreneur.jpg')center/cover;
+    padding: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.box_5 h3 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.box_6 {
+    height: 450px;
+    background: rgb(153, 110, 70);
+    padding: 45px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.box_7 {
+    height: 450px;
+    background: url('../img/math.jpg')center/cover;
+    padding: 45px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.box_8 {
+    height: 450px;
+    background: rgb(0, 140, 255);
+    padding: 45px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 1s;
+}
+
+/* ADMISSION BANNER */
+
+.admission {
+    background: rgba(196, 216, 191, 0.219);
+    margin: 60px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.admission h2 {
+    font-weight: bold;
+    padding: 30px;
+    font-size: 60px;
+    color: rgb(99, 17, 17);
+    margin: auto;
+}
+
+.admission img {
+    width: 100%;
+    height: auto;
+    margin: 40px;
+    margin: auto;
+}
+
+.admission p {
+    margin: 0 0 30px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(2, 87, 88);
+}
+
+.admission a {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 5px;
+    background: rgb(9, 100, 102);
+    color: white;
+}
+
+.admission a:hover {
+    background: rgb(109, 177, 179);
+}
+
+/* GRID NEWS CARDS */
+
+#news {
+    text-align: center;
+    font-size: 40px;
+    margin: 70px;
+}
+
+.news-cards {
+    padding: 40px;
+    background: rgba(36, 92, 94, 0.397);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 25px;
+}
+
+.news-cards img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.in {
+    background: white;
+    padding: 15px;
+}
+
+.in p {
+    text-align: justify;
+}
+
+.news-cards h3 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.news-cards a {
+    padding: 10px 0;
+    color: rgb(0, 130, 133);
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.news-cards a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE WEB DESIGN */
+
+@media (max-width: 1200px) {
+    /* GRID FIRST AND NEWS CARDS */
+
+    .grid-first,
+    .news-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .box_1 {
+        grid-column: 1/3;
+    }
+}
+
+@media (max-width: 650px) {
+    /* ADMISSION BANNER */
+
+    .admission {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 60px;
+    }
+
+    .admission h2 {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    .admission p {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .admission img {
+        height: 300px;
+        object-fit: cover;
+        margin: 0;
+    }
+
+    .admission a {
+        font-size: 13px;
+    }
+
+    /* GRID FIRST */
+
+    .grid-first {
+        grid-template-columns: 1fr;
+    }
+
+    .box_1,
+    .box_2 {
+        grid-column: 1/2;
+    }
+
+    /* GRID NEWS CARDS */
+
+    #news {
+        font-size: 25px;
+        margin: 10px;
+        margin-bottom: 20px;
+    }
+
+    .news-cards {
+        grid-template-columns: 1fr;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 513px) {
+    /* MENU */
+
+    #nav {
+        height: 400px;
+    }
+
+    #nav #word h2 {
+        font-size: 29px;
+        padding: 5px;
+    }
+
+    div.update {
+        height: 40px;
+    }
+    div.update a {
+        font-size: 12px;
+    }
+
+    /* GRID FIRST */
+
+    .grid-first h2 {
+        font-size: 23px;
+    }
+
+    .box {
+        padding: 10px;
+        height: 250px;
+    }
+
+    .box h3,
+    .box p,
+    .box a {
+        font-size: 17px;
+    }
+}
